@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato Corre Dazarte</title>
+</head>
+<body>
+
+    <div class="formulario">
+        <form action="EncomendasCorre.php" method="post">
+            <fieldset>
+                <legend>Informações para encomenda</legend>
+                    <table cellspacing="8" align="center">
+                        <tr> <!-- nova linha tabela -->
+                            <td>
+                                <label for="nome">Nome:</label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="nome" value="Nome">
+                            </td>
+                        </tr>
+
+                        <tr> <!-- nova linha tabela -->
+                            <td>
+                                <label for="telefone">Telefone com Whatsapp:</label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="telefone" value="DDD+telefone com Whatsapp">
+                            </td>
+                    
+                        </tr>
+
+                        <tr> <!-- nova linha tabela -->
+                            <td>
+                                <label for="produto">Produto:</label>
+                            </td>
+                            <td align="left">
+                                <select name="produto">
+                                    <option value="camiseta">Camiseta</option>
+                                    <option value="ecobag">Ecobag</option>
+                                    <option value="caderno">Caderno</option>
+                                    <option value="chaveiro">Chaveiro</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr> <!-- nova linha tabela -->
+                            
+                        </tr>
+                    </table>
+                    <input type="submit" value="Enviar"> 
+                    <input type="reset" value="Limpar Formulário"> 
+            </fieldset>
+           
+            
+        </form>    
+    </div>
+    
+</body>
+</html>
