@@ -4,20 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
     <title>Contato Corre Dazarte</title>
 </head>
 <body>
 
-    <div class="formulario">
-        <form action="EncomendasCorre.php" method="post">
+    <header class="cabecalho">
+        <img class="logo" src="./images/logoCorre.png" alt="logo Corre Dazarte">
+
+    <nav>
+        <ul class="menu">
+            <li><a href src="#">Loja</li></a>
+            <li><a href src="#">Encomendas</li></a>
+            <li><a href src="#">Quem Somos</li></a>
+        </ul>
+    </nav>
+    </header>
+
+    <div class="container">
+        <form class="formulario" action="EncomendasCorre.php" method="post">
             <fieldset>
-                <legend>Informações para encomenda</legend>
-                    <table cellspacing="8" align="center">
+                <legend class="formulario-legenda">Informações para encomenda</legend>
+                    <table class="formulario-tabela" cellspacing="8">
                         <tr> <!-- nova linha tabela -->
                             <td>
                                 <label for="nome">Nome:</label>
                             </td>
-                            <td align="left">
+                            <td>
                                 <input type="text" name="nome" value="Nome">
                             </td>
                         </tr>
@@ -26,7 +46,7 @@
                             <td>
                                 <label for="telefone">Telefone com Whatsapp:</label>
                             </td>
-                            <td align="left">
+                            <td>
                                 <input type="text" name="telefone" value="DDD+telefone com Whatsapp">
                             </td>
                     
@@ -36,7 +56,7 @@
                             <td>
                                 <label for="produto">Produto:</label>
                             </td>
-                            <td align="left">
+                            <td>
                                 <select name="produto">
                                     <option value="camiseta">Camiseta</option>
                                     <option value="ecobag">Ecobag</option>
@@ -47,8 +67,29 @@
                         </tr>
 
                         <tr> <!-- nova linha tabela -->
-                            
+                            <td><label for="tamanho">Tamanho:</label>
+                            </td>
+                            <td>
+                                <select name="tamanho">
+                                    <option value="tamPP">PP</option>
+                                    <option value="tamP">P</option>
+                                    <option value="tamM">M</option>
+                                    <option value="tamG">G</option>
+                                    <option value="tamGG">GG</option>
+                                </select>
+                            </td>
                         </tr>
+                        <tr> <!-- nova linha tabela -->
+                            <td><label for="estampa">Estampa:</label>
+                            </td>
+                            <td>
+                                <select name="estampa">
+                                    <option value="somosTodesSUS">Somos Todes SUS</option>
+                                    <option value="sabotage">Sabotage</option>
+                                    <option value="poderAncestral">Poder Ancestral (by Rusha)</option>
+                                </select>
+                            </td>
+                            </tr>
                     </table>
                     <input type="submit" value="Enviar"> 
                     <input type="reset" value="Limpar Formulário"> 
