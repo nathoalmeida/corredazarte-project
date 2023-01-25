@@ -29,7 +29,7 @@
     </header>
 
     <div class="container">
-        <form class="formulario" action="EncomendasCorre.php" method="post">
+        <form class="formulario" action="EncomendasCorre.php" method="post" onsubmit="return validateForm(this);">
             <fieldset>
                 <legend class="formulario-legenda">Informações para encomenda</legend>
                     <table class="formulario-tabela" cellspacing="8">
@@ -38,7 +38,7 @@
                                 <label for="nome">Nome:</label>
                             </td>
                             <td>
-                                <input type="text" name="nome" value="Nome">
+                                <input id="formName" type="text" name="nome" value="Nome">
                             </td>
                         </tr>
 
@@ -47,7 +47,7 @@
                                 <label for="telefone">Telefone com Whatsapp:</label>
                             </td>
                             <td>
-                                <input type="text" name="telefone" value="DDD+telefone com Whatsapp">
+                                <input id="telefone" type="text" name="telefone" value="DDD+telefone com Whatsapp">
                             </td>
                     
                         </tr>
@@ -90,14 +90,20 @@
                                 </select>
                             </td>
                             </tr>
+                            <tr>
+                                <td><label for="comentarios">Comentários:</label></td>
+                                <td><textarea></textarea></td>
                     </table>
                     <input class="button" type="submit" value="Enviar"> 
                     <input class="button" type="reset" value="Limpar Formulário"> 
+                   
+                </tr>
             </fieldset>
            
             
         </form>    
     </div>
-    
+
+    <script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>
