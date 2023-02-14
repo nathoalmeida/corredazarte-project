@@ -4,9 +4,12 @@ function validateForm(f) {
     if(f.name.value == "" || f.name.value == null || (f.name.value.lenght < 3) ) 
        {
             alert("Nome inválido");
-            f.name.focus();
-            return false;
+
         }
+
+    if(f.telefone.value == "" || f.telefone.value == null || (f.telefone.value.lenght < 11)) {
+        alert("Insira um número de telefone com DDD");
+    }
 }
 
 const formName = document.getElementById("formName");

@@ -21,7 +21,7 @@
 
     <nav>
         <ul class="menu">
-            <li><a href src="#">Loja</li></a>
+            <li><a href src="?page=loja">Loja</li></a>
             <li><a href src="#">Encomendas</li></a>
             <li><a href src="#">Quem Somos</li></a>
         </ul>
@@ -101,8 +101,30 @@
             </fieldset>
            
             
-        </form>    
+        </form>  
+
+        <?php
+
+    
+
+        switch(@$_REQUEST["page"]) {
+            case "loja":
+                include("produtos-loja.php");
+                break;
+            case "quemsomos":
+                include("quem-somos.php");
+                break;
+            case "encomenda":
+                include("encomendas.php");
+                break;
+            
+            default:
+                print "Bem-vindos";
+        }
+?>
+        
     </div>
+    
 
     <script type="text/javascript" src="./js/index.js"></script>
 </body>
