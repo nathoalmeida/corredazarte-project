@@ -10,9 +10,9 @@
     
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bs-dark-bg-subtle">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="..."></a>
+          <a class="navbar-brand" href="#"><img src="img/logoCorre.png" width="60"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -26,6 +26,7 @@
                   Loja
                 </a>
                 <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Caderno</a></li>
                   <li><a class="dropdown-item" href="#">Camiseta</a></li>
                   <li><a class="dropdown-item" href="#">Ecobag</a></li>
                   <li><hr class="dropdown-divider"></li>
@@ -37,7 +38,7 @@
               </li>
               
               <li class="nav-item">
-                <a class="nav-link active">Contato</a>
+                <a class="nav-link" href="#">Contato</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -48,6 +49,7 @@
         </div>
       </nav>
       <div class="container-fluid mt-5 p-5">
+        <h4>O Corre</h4>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae porttitor est. Nullam sit amet augue metus. 
         Curabitur tristique euismod lectus, at gravida quam pretium et. Sed odio nulla, egestas et hendrerit non, ultricies ac neque. Duis porttitor, 
         libero id vehicula ultrices, justo augue luctus ipsum, eu lobortis mi est blandit mauris. Aliquam lacinia suscipit nisl nec aliquam. Pellentesque
@@ -56,10 +58,10 @@
          pharetra nisl ac lorem commodo, vel elementum libero volutpat. Praesent pellentesque turpis non purus hendrerit porta. Curabitur malesuada 
          nibh non justo posuere convallis. Mauris lorem dui, lacinia at blandit in, varius ut metus.
       </div>
-      <div class="row mx-auto mt-5 p-1" style="width: 800px;">
-  <div class="col-sm-4 mb-4  mb-sm-0">
+      <div class="row mx-auto mt-4 p-1" style="max-width: 1000px;">
+  <div class="col-sm-3 mb-4  mb-sm-0">
     <div class="card text-center mb-4">
-      <img src="#" class="card-img-top" alt="...">
+      <img src="img/logoCorre.png" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Camisetas</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -67,9 +69,9 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-4 mb-4 mb-sm-0">
+  <div class="col-sm-3 mb-4 mb-sm-0">
     <div class="card text-center mb-4">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="img/logoCorre.png" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Cadernos</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -77,11 +79,21 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-4 mb-4 mb-sm-0">
+  <div class="col-sm-3 mb-4 mb-sm-0">
     <div class="card text-center mb-4">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="img/logoCorre.png" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Ecobags</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-success">Veja mais</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3 mb-4 mb-sm-0">
+    <div class="card text-center mb-4">
+      <img src="img/logoCorre.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Chaveiros</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <a href="#" class="btn btn-success">Veja mais</a>
       </div>
@@ -91,16 +103,25 @@
 </div>
 
 
-<div class="mb-1 ps-5">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+<!--- <div class="mb-1 p-3"> -->
+  <div class="container-fluid mt-5 p-5" style="max-width: 800px">
+  <h4>Fale Conosco</h4>
+  <div class="mb-3 ps-3 me-5">
+    <label for="exampleFormControlInput1" class="form-label">Nome</label>
+    <input type="name" class="form-control" style="width: 500px;" id="exampleFormControlInput1" placeholder="Insira seu nome">
+  </div>
+  <div class="mb-3 ps-3 me-5">
+  <label for="exampleFormControlInput1" class="form-label">E-mail</label>
+  <input type="email" class="form-control" style="width: 500px" id="exampleFormControlInput1" placeholder="name@example.com">
 </div>
-<div class="mb-3 ps-5">
-  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+<div class="mb-3 ps-3 me-5">
+  <label for="exampleFormControlTextarea1" class="form-label">Mensagem:</label>
+  <textarea class="form-control" style="width: 650px" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
-      
 
+  <button type="submit" class="btn btn-outline-success mb-5">Enviar</button>
+
+</div>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
